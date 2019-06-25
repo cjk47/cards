@@ -3,7 +3,138 @@
 
 <head>
 <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css">
+
+   <style>
+      
+      *,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+  font-family: "Karla", sans-serif;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  background: #edeae2;
+  padding: 23px 21px 0;
+  margin-bottom: 32px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__meta {
+  margin-bottom: 11px;
+}
+
+.article__post-type {
+  font-size: 12px;
+  display: inline-block;
+  float: left;
+  color: #5d5b5a;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.article__view-more {
+  display: inline-block;
+  font-size: 13px;
+  color: #1342dc;
+  transition: color 0.4s;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  float: right;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.article__view-more:hover {
+  color: #fc2230;
+}
+
+.article__main {
+  position: relative; /* for arrow */
+  padding-bottom: 17px;
+  flex-grow: 1;
+}
+
+.article__image {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.article__content {
+  margin-top: 19px;
+  border-top: 8px solid #202020;
+  padding-top: 10px;
+}
+
+.article__title {
+  float: left;
+  width: 40.7%;
+  padding-right: 5px;
+  padding-bottom: 24px;
+  font-size: 21px;
+  letter-spacing: 0.005em;
+}
+
+.article__description {
+  width: 59.3%;
+  float: right;
+  font-size: 13px;
+  line-height: 1.27;
+  color: #5d5b5a;
+  letter-spacing: 0.005em;
+}
+
+.btn-arrow {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  height: 12px;
+  width: 28px;
+}
+
+.btn-arrow__img {
+  height: 12px;
+  width: 23px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media only screen and (min-width: 620px) {
+  .article {
+    width: 48.5%;
+  }
+  body {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .article {
+    width: 32.1%;
+  }
+}
+      
+   </style>
+   
+   
 </head>
 
 <body>
